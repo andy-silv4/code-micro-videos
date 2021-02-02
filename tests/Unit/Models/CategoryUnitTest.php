@@ -5,10 +5,9 @@ namespace Tests\Unit\Models;
 use App\Models\Category;
 use App\Models\Traits\Uuid;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class CategoryTest extends TestCase
+class CategoryUnitTest extends TestCase
 {
     private $category;
 

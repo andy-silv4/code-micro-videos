@@ -18,7 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['namespace' => 'Api'], function() {
-    Route::apiResource('categories', 'CategoryController');
-    Route::apiResource('genres', 'GenreController');
+    Route::apiResource('categories', CategoryController::class);
+    Route::apiResource('genres', GenreController::class);
     Route::apiResource('cast_members', CastMemberController::class);
+    Route::apiResource('videos', VideoController::class);
 });
